@@ -11,8 +11,8 @@ open class CustomIntensityVisualEffectView: UIVisualEffectView {
 
     public init(effect: UIVisualEffect?, intensity: CGFloat) {
         super.init(effect: nil)
-        animator = UIViewPropertyAnimator(duration: 1, curve: .linear) { [weak self] in self?.effect = effect }
         if #available(iOS 10, *) {
+            animator = UIViewPropertyAnimator(duration: 1, curve: .linear) { [weak self] in self?.effect = effect }
             animator.fractionComplete = intensity
         } else {
         }
