@@ -1,5 +1,6 @@
 import UIKit
 
+@available(iOS 10.0, *)
 open class CustomIntensityVisualEffectView: UIVisualEffectView {
     @available(iOS 10.0, *)
     private var animator: UIViewPropertyAnimator!
