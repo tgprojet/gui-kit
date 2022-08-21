@@ -1,6 +1,7 @@
 import UIKit
 
 open class CustomIntensityVisualEffectView: UIVisualEffectView {
+    @available(iOS 10.0, *)
     private var animator: UIViewPropertyAnimator!
 
     /// Create visual effect view with given effect and its intensity
