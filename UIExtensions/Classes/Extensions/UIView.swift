@@ -38,7 +38,7 @@ extension UIView {
     }
 
     @IBInspectable
-    open var borderWidth: CGFloat {
+    open var borderWidthFloat: CGFloat {
         get {
             layer.borderWidth
         }
@@ -48,7 +48,7 @@ extension UIView {
     }
 
     @IBInspectable
-    open var borderColor: UIColor? {
+    open var borderUIColor: UIColor? {
         get {
             guard let color = layer.borderColor else { return nil }
             return UIColor(cgColor: color)
